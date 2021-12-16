@@ -63,15 +63,8 @@ input:focus {
   box-shadow: 2px 2px 6px rgba(0, 0, 255, 0.2);
 }
 
-@media screen and (max-width: 600px) {
-  label {
-    margin-right: 10px;
-    font-size: 20px;
-  }
-}
-
 .colors-container {
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 150px);
   display: grid;
   padding: 10px;
   overflow: hidden;
@@ -154,4 +147,45 @@ input:focus {
 
 .error {
   border: 2px solid red;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.randomBtn {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease;
+}
+
+.randomBtn:hover {
+  background-color: rgb(31, 31, 248);
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  label {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  form {
+    flex-direction: column;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .randomBtn {
+    margin-top: -20px;
+    width: 300px;
+  }
 }
