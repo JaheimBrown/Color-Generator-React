@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MdConnectedTv, MdContentCopy } from "react-icons/md";
+import { MdContentCopy } from "react-icons/md";
 
 const Color = ({ rgb, weight, hexColor, index }) => {
   const [copy, setCopy] = useState(false);
